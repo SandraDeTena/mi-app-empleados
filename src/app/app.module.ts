@@ -14,7 +14,7 @@ import { MatSliderModule } from '@angular/material/slider';
   ],
   imports: [
     BrowserModule,
-
+    AppRoutingModule,
     BrowserAnimationsModule,
     MatSliderModule,
   ],
