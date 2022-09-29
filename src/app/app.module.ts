@@ -9,12 +9,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { AddEditEmpleadoComponent } from './components/add-edit-empleado/add-edit-empleado.component';
 import { ListEmpleadosComponent } from './components/list-empleados/list-empleados.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddEditEmpleadoComponent,
-    ListEmpleadosComponent
+    ListEmpleadosComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
