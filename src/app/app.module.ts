@@ -7,10 +7,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //Importar Angular Material
 import { MatSliderModule } from '@angular/material/slider';
+import { AddEditEmpleadoComponent } from './components/add-edit-empleado/add-edit-empleado.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AddEditEmpleadoComponent
   ],
   imports: [
     BrowserModule,
