@@ -11,6 +11,7 @@ import { AddEditEmpleadoComponent } from './components/add-edit-empleado/add-edi
 import { ListEmpleadosComponent } from './components/list-empleados/list-empleados.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { MensajeConfirmacionComponent } from './components/shared/mensaje-confirmacion/mensaje-confirmacion.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FooterComponent } from './components/footer/footer.component';
     AddEditEmpleadoComponent,
     ListEmpleadosComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    MensajeConfirmacionComponent
   ],
   imports: [
     BrowserModule,
