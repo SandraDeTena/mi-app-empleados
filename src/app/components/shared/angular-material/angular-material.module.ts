@@ -11,6 +11,9 @@ import { MatSliderModule } from '@angular/material/slider';
   imports: [
     CommonModule,
     MatSliderModule
+  ],
+  exports: [
+    MatSliderModule
   ]
 })
 export class AngularMaterialModule { }
