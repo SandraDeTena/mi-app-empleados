@@ -7,6 +7,9 @@ import { MatSliderModule } from '@angular/material/slider';
 //Toolbar Angular Material
 import { MatToolbarModule } from '@angular/material/toolbar';
 
+//Importar Tabla de Material Angular
+import { MatTableModule } from '@angular/material/table';
+
 
 
 @NgModule({
@@ -14,11 +17,13 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   imports: [
     CommonModule,
     MatSliderModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatTableModule
   ],
   exports: [
     MatSliderModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatTableModule
   ]
 })
 export class AngularMaterialModule { }
