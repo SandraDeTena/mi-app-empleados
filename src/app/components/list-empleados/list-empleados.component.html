@@ -1,3 +1,9 @@
+<!-- Incluir el filtro en la tabla -->
+<mat-form-field>
+    <mat-label>Filter</mat-label>
+    <input matInput(keyup)='applyFilter($event)' placeholder="Example Filter">
+</mat-form-field>
+
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
     <!-- Position Column -->
     <ng-container matColumnDef="position">
