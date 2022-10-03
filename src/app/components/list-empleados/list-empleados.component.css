@@ -15,3 +15,8 @@
 .demo-row-is-clicked {
     font-weight: bold;
 }
+
+.buttonAgregar {
+    text-align: right;
+    margin-bottom: 10px;
+}
