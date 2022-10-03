@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
+import { MatPaginator } from '@angular/material/paginator';
 
 export interface Empleados {
   position: number;
@@ -10,7 +11,7 @@ export interface Empleados {
 }
 
 const ELEMENT_DATA: Empleados[] = [
-  { position: 1, name: 'Aida Soto Pacho', age: 1.0079, dateIncorporation: '15/09/2020', generation: 'F' },
+  { position: 1, name: 'Aida Soto Pacho', age: 29, dateIncorporation: '15/09/2020', generation: 'F' },
   { position: 2, name: 'Miguel Sánchez Silva', age: 40, dateIncorporation: '22/07/2020', generation: 'M' },
   { position: 3, name: 'José Luís Mañueco Gómez', age: 62, dateIncorporation: '15/09/2020', generation: 'M' },
   { position: 4, name: 'Angels Barceló', age: 32, dateIncorporation: '15/09/2020', generation: 'F' },
@@ -19,7 +20,7 @@ const ELEMENT_DATA: Empleados[] = [
   { position: 7, name: 'Aura Ferreiro', age: 40, dateIncorporation: '15/09/2020', generation: 'F' },
   { position: 8, name: 'Jaime Ostos Galdós', age: 59, dateIncorporation: '15/09/2020', generation: 'M' },
   { position: 9, name: 'Juan Manuel Rodriguez Serradilla', age: 18, dateIncorporation: '15/09/2020', generation: 'M' },
-  { position: 10, name: 'Matilda Falcón', age: 20.1797, dateIncorporation: '15/09/2020', generation: 'F' },
+  { position: 10, name: 'Matilda Falcón', age: 20, dateIncorporation: '15/09/2020', generation: 'F' },
 ];
 
 @Component({
@@ -33,9 +34,14 @@ export class ListEmpleadosComponent implements OnInit {
   dataSource = new MatTableDataSource(ELEMENT_DATA);
   clickedRows = new Set<Empleados>();
 
-  constructor() { }
+  // @ViewChild(MatPaginator) paginator: MatPaginator;
+
+  constructor() {
+    // this.paginator = new MatPaginator();
+  }
 
   ngOnInit(): void {
+    // this.dataSource.paginator = this.paginator;
   }
 
   // applyFilter(event: Event) {

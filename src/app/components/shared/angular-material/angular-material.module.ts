@@ -19,6 +19,9 @@ import { MatInputModule } from '@angular/material/input';
 //Importar los iconos
 import { MatIconModule } from '@angular/material/icon';
 
+//Importar paginación de Angular Material
+import { MatPaginator } from '@angular/material/paginator';
+
 
 
 @NgModule({
@@ -30,7 +33,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatTableModule,
     MatFormFieldModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+
   ],
   exports: [
     MatSliderModule,
@@ -38,7 +42,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatTableModule,
     MatFormFieldModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+
   ]
 })
 export class AngularMaterialModule { }
