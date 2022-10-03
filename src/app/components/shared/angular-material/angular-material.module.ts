@@ -38,7 +38,7 @@ import { MatSortModule } from '@angular/material/sort';
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
-    MatSortModule
+
 
   ],
   exports: [
@@ -48,7 +48,7 @@ import { MatSortModule } from '@angular/material/sort';
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
-    MatSortModule
+
 
   ]
 })
