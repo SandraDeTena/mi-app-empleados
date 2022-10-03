@@ -22,6 +22,10 @@ import { MatIconModule } from '@angular/material/icon';
 //Importar paginación de Angular Material
 import { MatPaginator } from '@angular/material/paginator';
 
+// Importar la filtración de cada una de las columnas de las tablas
+import { MatSortModule } from '@angular/material/sort';
+
+
 
 
 @NgModule({
@@ -34,6 +38,7 @@ import { MatPaginator } from '@angular/material/paginator';
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
+    MatSortModule
 
   ],
   exports: [
@@ -43,6 +48,7 @@ import { MatPaginator } from '@angular/material/paginator';
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
+    MatSortModule
 
   ]
 })

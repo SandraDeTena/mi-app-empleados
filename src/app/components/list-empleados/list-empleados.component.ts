@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
 
 export interface Empleados {
   position: number;
@@ -34,7 +35,8 @@ export class ListEmpleadosComponent implements OnInit {
   dataSource = new MatTableDataSource(ELEMENT_DATA);
   clickedRows = new Set<Empleados>();
 
-  // @ViewChild(MatPaginator) paginator: MatPaginator;
+  // @ViewChild(MatPaginator,{static: true}) paginator: MatPaginator;
+  // @ViewChild(MatSort, { static: true }) sort: MatSort;
 
   constructor() {
     // this.paginator = new MatPaginator();
@@ -42,6 +44,7 @@ export class ListEmpleadosComponent implements OnInit {
 
   ngOnInit(): void {
     // this.dataSource.paginator = this.paginator;
+    // this.dataSource.sort = this.sort;
   }
 
   // applyFilter(event: Event) {
